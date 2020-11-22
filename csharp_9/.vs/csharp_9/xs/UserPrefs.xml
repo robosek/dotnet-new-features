@@ -1,22 +1,21 @@
 ﻿<Properties StartupConfiguration="{98890B0D-F865-43C4-9798-44A1681AE70C}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="csharp_9/Records.cs">
-    <Files>
-      <File FileName="csharp_9/Program.cs" Line="12" Column="2" />
-      <File FileName="csharp_9/Records.cs" Line="11" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="csharp_9" expanded="True">
             <Node name="csharp_9" expanded="True">
-              <Node name="Dependencies" selected="True" />
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.csharp__9 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.csharp__9 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

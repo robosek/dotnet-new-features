@@ -23,9 +23,11 @@ namespace csharp_9
                 Console.WriteLine($"Is valid address?: {IsValidAddress(newAddress)}");
             }
 
+            Point point = new (3, 5);
+            PointRecord pointRecord = new(3, 5);
+            PointRecord pointRecord1 = new(3, 5);
 
-
-            
+            Console.WriteLine($"Are records equal? {pointRecord == pointRecord1}");
         }
 
         private static bool IsNotNullAndEmpty(string value) => value is not null && value is not "";
@@ -34,18 +36,12 @@ namespace csharp_9
             IsNotNullAndEmpty(address.City) && IsNotNullAndEmpty(address.PostalCode)
                     && IsNotNullAndEmpty(address.Street);
 
-        public static void CheckCity(Address address)
-        {
-
-        }
-
-             address switch
-                {
-                    Address a when a.City == "Gdańsk" => Console.WriteLine("Oh that's Gdańsk"),
-                    Address a when a.City == "Toruń" => Console.WriteLine("Oh that's Toruń"),
-                    _ => Console.WriteLine("It's good to have address")
-                };
-
-
+        public static string CheckCity(Address address) =>
+            address switch
+            {
+                Address { City: "Gdańsk" } => "Oh that's Gdańsk",
+                Address { City: "Toruń" } => "Oh that's Toruń",
+                _ => "It's good to have address"
+            };
     }
 }
